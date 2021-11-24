@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <header>
-        <h1>Figuras Geométricas</h1>
+    <header class="header">
+        <div class="container-user">
+            <img src="./assets/user.png" alt="">
+            <div class="container-body">
+                <h3>Ivan Castro</h3>
+                <p>Diseñador de interfaces de usuario</p>
+            </div>
+        </div>
+        <div class="container-course">
+            <p>Interactuando con JavaScript desde HTML</p>
+            <img src="./assets/platzi-icon.png" alt="">
+        </div>
     </header>
-    <section>
-        
-    </section>   
-
+    <section class="container-breadcrumb">
+        <div class="breadcrumb-title">
+            <p>Ruta de aprendizaje:</p>
+        </div>
+        <div class="breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="#">Escuela de Desarrollo Web</a></li>
+                <img src="./assets/arrow.png" alt="">
+                <li class="breadcrumb-item"><a target="blank" href="https://platzi.com/clases/javascript-practico/">Curso Práctico de JavaScript</a></li>
+            </ol>
+        </div>
+    </section>
+    <section class="container-description">
+        <div class="description-title">
+            <img src="./assets/icon-category.png" alt="">
+            <h2>Calcular figuras geométricas</h2>
+        </div>
+        <p>Practica todo lo que has aprendido de JavaScript para crear una página web con diferentes
+            ejercicios básicos de matemáticas.
+        </p>
+        <div class="description-card">
+            <div class="card-detail">
+                <img src="./assets/teacher.png" alt="">
+                <div class="card-body">
+                    <p>Instruido por:</p>
+                    <h3>Juan David Castro</h3>
+                </div>
+            </div>
+            <div class="card-detail">
+                <img src="./assets/level.png" alt="">
+                <div class="card-body">
+                    <p>Nivel:</p>
+                    <h3>Básico</h3>
+                </div>
+            </div>
+            <div class="card-detail">
+                <img src="./assets/time.png" alt="">
+                <div class="card-body">
+                    <p>Contenido:</p>
+                    <h3>4 horas de contenido</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 <script src="./figuras.js"></script>    
 </body>
 </html>
