@@ -104,6 +104,34 @@
             </div>        
         </form>
     </section>
+    <section class="container-form-triangle">
+        <div class="form-title">
+            <img src="./assets/icon-triangle.png" alt="">
+            <div class="body-title">
+                <h3>Triángulo</h3>
+                <p>Aquí podras calcular el área o el perímetro de un triángulo</p>
+            </div>
+        </div>
+        <form id="form">
+            <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
+            <input id="InputCuadrado" placeholder="Ingresar valor" type="number">
+            <div class="form-result">
+                <div class="result-perimetro">
+                    <p>Perímetro: <strong id="perimetro"></strong></p>
+                </div>
+                <div class="result-area">
+                    <p>Área: <strong id="area"></strong></p>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button id="perimetro" onclick="calcularPerimetro()" type="button">Calcular el perímetro</button>
+                <button id="area" onclick="calcularArea()" type="button">Calcular el área</button>
+            </div>    
+            <div class="erase">
+                <button onclick="resetInput()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
+            </div>        
+        </form>
+    </section>
 <script src="./figuras.js"></script>    
 </body>
 </html>
