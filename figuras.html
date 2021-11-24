@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Figuras Geométricas</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container-user">
-            <img src="./assets/user.png" alt="">
-            <div class="container-body">
-                <h3>Ivan Castro</h3>
-                <p>Diseñador de interfaces de usuario</p>
+    <section class="container-header">
+        <header class="header">
+            <div class="container-user">
+                <img src="./assets/user.png" alt="">
+                <div class="container-body">
+                    <h3>Ivan Castro</h3>
+                    <p>Diseñador de interfaces de usuario</p>
+                </div>
             </div>
-        </div>
-        <div class="container-course">
-            <p>Interactuando con JavaScript desde HTML</p>
-            <img src="./assets/platzi-icon.png" alt="">
-        </div>
-    </header>
-    <section class="container-breadcrumb">
-        <div class="breadcrumb-title">
-            <p>Ruta de aprendizaje:</p>
-        </div>
-        <div class="breadcrumb">
-            <ol class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="#">Escuela de Desarrollo Web</a></li>
-                <img src="./assets/arrow.png" alt="">
-                <li class="breadcrumb-item"><a target="blank" href="https://platzi.com/clases/javascript-practico/">Curso Práctico de JavaScript</a></li>
-            </ol>
-        </div>
-    </section>
+            <div class="container-course">
+                <p>Interactuando con JavaScript desde HTML</p>
+                <img src="./assets/platzi-icon.png" alt="">
+            </div>
+        </header>
+        <section class="container-breadcrumb">
+            <div class="breadcrumb-title">
+                <p>Ruta de aprendizaje:</p>
+            </div>
+            <div class="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="#">Escuela de Desarrollo Web</a></li>
+                    <img src="./assets/arrow.png" alt="">
+                    <li class="breadcrumb-item"><a target="blank" href="https://platzi.com/clases/javascript-practico/">Curso Práctico de JavaScript</a></li>
+                </ol>
+            </div>
+        </section>
+    </section>    
     <section class="container-description">
         <div class="description-title">
             <img src="./assets/icon-category.png" alt="">
@@ -65,6 +67,42 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="container-menu">
+        <p>Selecciona una opción</p>
+        <div class="menu-options">
+            <button id="square" type="button"><img src="./assets/square.png" alt="">Cuadrado</button>
+            <button id="triangle" type="button"><img src="./assets/triangle.png" alt="">Triángulo</button>
+            <button id="circle" type="button"><img src="./assets/circle.png" alt="">Circulo</button>
+        </div>
+    </section>
+    <section class="container-form">
+        <div class="form-title">
+            <img src="./assets/icon-square.png" alt="">
+            <div class="body-title">
+                <h3>Cuadrado</h3>
+                <p>Aquí podras calcular el área o el perímetro de un cuadrado</p>
+            </div>
+        </div>
+        <form id="form">
+            <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
+            <input id="InputCuadrado" placeholder="Ingresar valor" type="number">
+            <div class="form-result">
+                <div class="result-perimetro">
+                    <p>Perímetro: <strong id="perimetro"></strong></p>
+                </div>
+                <div class="result-area">
+                    <p>Área: <strong id="area"></strong></p>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button id="perimetro" onclick="calcularPerimetro()" type="button">Calcular el perímetro</button>
+                <button id="area" onclick="calcularArea()" type="button">Calcular el área</button>
+            </div>    
+            <div class="erase">
+                <button onclick="resetInput()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
+            </div>        
+        </form>
     </section>
 <script src="./figuras.js"></script>    
 </body>

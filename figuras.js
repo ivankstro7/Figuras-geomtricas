@@ -87,3 +87,36 @@ function areaCirculo(radio) {
 }
 
 console.groupEnd();
+
+// interaccion con HTML
+
+function calcularPerimetro() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value
+    const resultado = perimetroCuadrado(value);
+    const perimetro = document.getElementById("perimetro");
+
+    perimetro.style.color = "#423F3F";
+
+    document.getElementById("perimetro").innerHTML = resultado;  
+}
+
+function calcularArea() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value
+    const resultado = areaCuadrado(value);
+    const area = document.getElementById("area");
+
+    area.style.color = "#423F3F";
+
+    document.getElementById("area").innerHTML = resultado;  
+}
+
+function resetInput() {
+    document.getElementById("InputCuadrado").value="";
+    const perimetro = document.getElementById("perimetro");
+    const area = document.getElementById("area");
+
+    perimetro.style.color = "#fff";
+    area.style.color = "#fff";
+}

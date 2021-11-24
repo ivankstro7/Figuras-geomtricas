@@ -6,7 +6,7 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -155,8 +155,180 @@ body{
 .container-description .description-card .card-detail .card-body h3{
     font-size: 1.4rem;
     line-height: 1.6rem;
+    font-weight: 500;
+    color: #423F3F;
+}
+
+/* title */
+
+/* menu */
+
+.container-menu{
+    width: 50%;
+    max-width: 673px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 24px;
+    margin: 24px auto;
+    background-color: #fff;
+    border: 1px solid #D8DCE6;
+    border-radius: 4px;
+}
+
+.container-menu p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #423F3F;
+}
+
+.container-menu .menu-options{
+    display: flex;
+}
+
+.container-menu .menu-options button{
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    background-color: #fff;
+    border: 1px solid #D8DCE6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-menu .menu-options button:first-child{
+    background-color: #41B883;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.container-menu .menu-options button:last-child{
+    margin-left: 16px;
+}
+
+.container-menu .menu-options button img{
+    margin-right: 4px;
+}
+
+/* menu */
+
+/* formulario */
+
+.container-form{
+    width: 50%;
+    max-width: 673px;
+    padding:24px;
+    margin: 24px auto;
+    background-color: #fff;
+    border: 1px solid #D8DCE6;
+    border-radius: 4px;
+}
+
+.container-form .form-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.container-form .form-title img{
+    margin-right: 12px;
+}
+
+.container-form .form-title .body-title h3{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #423F3F;
+    margin-bottom: 4px;
+}
+
+.container-form .form-title .body-title p{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #423F3F;
+}
+
+.container-form #form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form #form label{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #7C859B;
+    margin-bottom: 8px;
+}
+
+.container-form #form input{
+    border: 1px solid #D8DCE6;
+    border-radius: 4px;
+    padding: 16px;
+    background: transparent;
+    background-color: #F3F5F7;
+    margin-bottom: 12px;
+}
+
+.container-form #form .form-result{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.container-form #form .form-result .result-perimetro{
+    margin-right: 16px;
+}
+
+.container-form #form .form-result .result-perimetro, .container-form #form .form-result .result-area{
+    width: 304px;
+}
+
+.container-form #form .form-result .result-perimetro p, .container-form #form .form-result .result-area p{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
     color: #423F3F;
 }
 
 
-/* title */
+.container-form #form .form-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.container-form #form .form-buttons button{
+    width: 304px;
+    margin-right: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    background-color: #41B883;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.container-form #form .form-buttons button:last-child{
+    margin-right: 0;
+}
+
+.container-form #form .erase{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-form #form .erase button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #7C859B;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* formulario */
