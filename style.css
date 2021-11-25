@@ -223,6 +223,10 @@ body{
     display: none;
 }
 
+.container-menu .menu-options button #icon-whiteCircle{
+    display: none;
+}
+
 /* menu */
 
 /* formulario  cuadrado */
@@ -373,3 +377,11 @@ body{
 }
 
 /* formulario  triangulo */
+
+/* formulario  circulo */
+
+#form-circle{
+    display: none;
+}
+
+/* formulario  circulo */

@@ -51,6 +51,7 @@ function areaTriangulo(base, altura) {
 console.groupEnd();
 
 // Código del circulo
+
 console.group("circulos");
 
 // Radio
@@ -92,19 +93,75 @@ console.groupEnd();
 
 // menu
 
+function showScuare() {
+
+    const square = document.getElementById("form-square");
+    const triangle = document.getElementById("form-triangle");
+    const circle = document.getElementById("form-circle");
+
+    const btnSquare = document.getElementById("square");
+    const iconSquare = document.getElementById("icon-square");
+    const iconBlackSquare = document.getElementById("icon-blackSquare");
+
+    const btnTriangle = document.getElementById("triangle");   
+    const iconTriangle = document.getElementById("icon-triangle");
+    const iconBlackTriangle = document.getElementById("icon-Whitetriangle"); 
+
+    const btnCircle = document.getElementById("circle");
+    const iconCircle = document.getElementById("icon-Circle");
+    const iconWhiteCircle = document.getElementById("icon-whiteCircle");  
+
+    square.style.display = "block";
+    triangle.style.display = "none";
+    circle.style.display = "none";
+
+    iconSquare.style.display = "block";
+    iconBlackSquare.style.display = "none";
+    btnSquare.style.background = "#41B883";
+    btnSquare.style.color = "#fff";
+    btnSquare.style.border = "none";   
+
+    iconTriangle.style.display = "block";
+    iconBlackTriangle.style.display = "none";
+    btnTriangle.style.background = "#fff",
+    btnTriangle.style.color = "#423F3F",
+    btnTriangle.style.border = "1px solid #D8DCE6"; 
+
+    iconCircle.style.display = "block";
+    iconWhiteCircle.style.display = "none";
+    btnCircle.style.background = "#fff",
+    btnCircle.style.color = "#423F3F",
+    btnCircle.style.border = "1px solid #D8DCE6";
+    
+}
+
 function showTriangle() {
 
     const square = document.getElementById("form-square");
     const triangle = document.getElementById("form-triangle");
-    const btnTriangle = document.getElementById("triangle");    
+    const circle = document.getElementById("form-circle");
+
     const btnSquare = document.getElementById("square");
-    const iconTriangle = document.getElementById("icon-triangle");
-    const iconBlackTriangle = document.getElementById("icon-Whitetriangle")
     const iconSquare = document.getElementById("icon-square");
     const iconBlackSquare = document.getElementById("icon-blackSquare");
 
+    const btnTriangle = document.getElementById("triangle");    
+    const iconTriangle = document.getElementById("icon-triangle");
+    const iconBlackTriangle = document.getElementById("icon-Whitetriangle");   
+    
+    const btnCircle = document.getElementById("circle");
+    const iconCircle = document.getElementById("icon-Circle");
+    const iconWhiteCircle = document.getElementById("icon-whiteCircle");
+
     square.style.display = "none";
     triangle.style.display = "block";
+    circle.style.display = "none";
+
+    iconSquare.style.display = "none";
+    iconBlackSquare.style.display = "block";
+    btnSquare.style.background = "#fff";
+    btnSquare.style.color = "#423F3F";
+    btnSquare.style.border = "1px solid #D8DCE6";    
 
     iconTriangle.style.display = "none";
     iconBlackTriangle.style.display = "block";
@@ -112,38 +169,52 @@ function showTriangle() {
     btnTriangle.style.color = "#fff",
     btnTriangle.style.border = "none";
 
-    iconSquare.style.display = "none";
-    iconBlackSquare.style.display = "block";
-    btnSquare.style.background = "#fff";
-    btnSquare.style.color = "#423F3F";
-    btnSquare.style.border = "1px solid #D8DCE6";    
+    iconCircle.style.display = "block";
+    iconWhiteCircle.style.display = "none";
+    btnCircle.style.background = "#fff";
+    btnCircle.style.color = "#423F3F";
+    btnCircle.style.border = "1px solid #D8DCE6";    
 }
 
-function showScuare() {
+function showCircle() {
 
     const square = document.getElementById("form-square");
     const triangle = document.getElementById("form-triangle");
-    const btnTriangle = document.getElementById("triangle");    
+    const circle = document.getElementById("form-circle");
+
     const btnSquare = document.getElementById("square");
-    const iconTriangle = document.getElementById("icon-triangle");
-    const iconBlackTriangle = document.getElementById("icon-Whitetriangle")
     const iconSquare = document.getElementById("icon-square");
     const iconBlackSquare = document.getElementById("icon-blackSquare");
 
-    square.style.display = "block";
+    const btnTriangle = document.getElementById("triangle");    
+    const iconTriangle = document.getElementById("icon-triangle");
+    const iconBlackTriangle = document.getElementById("icon-Whitetriangle");   
+
+    const btnCircle = document.getElementById("circle");
+    const iconCircle = document.getElementById("icon-Circle");
+    const iconWhiteCircle = document.getElementById("icon-whiteCircle");    
+    
+    square.style.display = "none";
     triangle.style.display = "none";
+    circle.style.display = "block";
+
+    iconSquare.style.display = "none";
+    iconBlackSquare.style.display = "block";
+    btnTriangle.style.background = "#fff";
+    btnTriangle.style.color = "#423F3F";
+    btnTriangle.style.border = "1px solid #D8DCE6";  
 
     iconTriangle.style.display = "block";
     iconBlackTriangle.style.display = "none";
-    btnTriangle.style.background = "#fff",
-    btnTriangle.style.color = "#423F3F",
-    btnTriangle.style.border = "1px solid #D8DCE6";
-
-    iconSquare.style.display = "block";
-    iconBlackSquare.style.display = "none";
-    btnSquare.style.background = "#41B883";
-    btnSquare.style.color = "#fff";
-    btnSquare.style.border = "none";    
+    btnSquare.style.background = "#fff";
+    btnSquare.style.color = "#423F3F";
+    btnSquare.style.border = "1px solid #D8DCE6";  
+    
+    iconCircle.style.display = "none";
+    iconWhiteCircle.style.display = "block";
+    btnCircle.style.background = "#41B883",
+    btnCircle.style.color = "#fff",
+    btnCircle.style.border = "none";
 }
 
 // cuadrado
@@ -184,26 +255,26 @@ function resetInput() {
 // triangulo
 
 function calcularPerimetroTriangulo() {
-    const ladoA = document.getElementById("InputSideA").value; 
-    const ladoB = document.getElementById("InputSideB").value;
-    const base = document.getElementById("InputBase").value;
-    const resultado = ladoA + ladoB + base;
-    const perimetro = document.getElementById("perimetroTriangulo");
+    const ladoA = parseFloat(document.getElementById("InputSideA").value);
+    const ladoB = parseFloat(document.getElementById("InputSideB").value);
+    const base = parseFloat(document.getElementById("InputBase").value);
+    const resultado = perimetroTriangulo(ladoA, ladoB, base);
+    const perimetro = document.getElementById("trianguloperimetro");
 
     perimetro.style.color = "#423F3F"
 
-    document.getElementById("perimetroTriangulo").innerHTML = resultado;  
+    document.getElementById("trianguloperimetro").innerHTML = resultado;  
 }
 
 function calcularAreaTriangulo() {     
     const base = document.getElementById("InputBase").value;
     const altura = document.getElementById("InputHeight").value;
-    const resultado = (base * altura) / 2;
-    const area = document.getElementById("areaTriangulo");
+    const resultado = areaTriangulo(base, altura);
+    const area = document.getElementById("trianguloArea");
 
     area.style.color = "#423F3F"
 
-    document.getElementById("areaTriangulo").innerHTML = resultado;  
+    document.getElementById("trianguloArea").innerHTML = resultado;  
 }
 
 function resetInputTriangulo() {
@@ -213,9 +284,45 @@ function resetInputTriangulo() {
     document.getElementById("InputHeight").value="";
     
 
-    const perimetro = document.getElementById("perimetroTriangulo");
-    const area = document.getElementById("areaTriangulo");
+    const perimetro = document.getElementById("trianguloperimetro");
+    const area = document.getElementById("trianguloArea");
 
     perimetro.style.color = "#fff";
     area.style.color = "#fff";
 }
+
+// triangulo
+
+// circulo
+
+function calcularPerimetroCirculo () {
+    const radio = document.getElementById("InputCirculo").value;
+    const resultado = diametroCirculo(radio);
+    const perimetro = document.getElementById("circuloPerimetro");
+
+    perimetro.style.color = "#423F3F"
+
+    document.getElementById("circuloPerimetro").innerHTML = resultado;
+}
+
+function calcularAreaCirculo () {
+    const radio = document.getElementById("InputCirculo").value;
+    const resultado = areaCirculo(radio);
+    const area = document.getElementById("circuloArea");
+
+    area.style.color = "#423F3F"
+
+    document.getElementById("circuloArea").innerHTML = resultado;
+}
+
+function resetInputCirculo() {
+    document.getElementById("InputCirculo").value="";
+    const perimetro = document.getElementById("circuloPerimetro");
+    const area = document.getElementById("circuloArea");
+
+    perimetro.style.color = "#fff";
+    area.style.color = "#fff";
+}
+
+
+

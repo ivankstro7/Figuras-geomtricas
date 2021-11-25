@@ -73,7 +73,7 @@
         <div class="menu-options">
             <button id="square" onclick="showScuare()" type="button"><img id="icon-square" src="./assets/square.png" alt=""><img id="icon-blackSquare" src="./assets/black-square.png" alt="">Cuadrado</button>
             <button id="triangle" onclick="showTriangle()" type="button"><img id="icon-triangle" src="./assets/triangle.png" alt=""><img id="icon-Whitetriangle" src="./assets/whiteTriangle.png" alt="">Triángulo</button>
-            <button id="circle" type="button"><img src="./assets/circle.png" alt="">Circulo</button>
+            <button id="circle" onclick="showCircle()" type="button"><img id="icon-Circle" src="./assets/circle.png" alt=""><img id="icon-whiteCircle" src="./assets/icon-whiteCircle.png" alt="">Circulo</button>
         </div>
     </section>
     <section id="form-square" class="container-form">
@@ -135,18 +135,46 @@
             </div>            
             <div class="form-result">
                 <div class="result-perimetro">
-                    <p>Perímetro: <strong id="perimetroTriangulo"></strong></p>
+                    <p>Perímetro: <strong id="trianguloperimetro"></strong></p>
                 </div>
                 <div class="result-area">
-                    <p>Área: <strong id="areaTriangulo"></strong></p>
+                    <p>Área: <strong id="trianguloArea"></strong></p>
                 </div>
             </div>
             <div class="form-buttons">
                 <button id="perimetroTriangulo" onclick="calcularPerimetroTriangulo()" type="button">Calcular el perímetro</button>
-                <button id="perimetroArea" onclick="calcularAreaTriangulo()" type="button">Calcular el área</button>
+                <button id="areaTriangulo" onclick="calcularAreaTriangulo()" type="button">Calcular el área</button>
             </div>    
             <div class="erase">
                 <button onclick="resetInputTriangulo()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
+            </div>        
+        </form>
+    </section>
+    <section id="form-circle" class="container-form">
+        <div class="form-title">
+            <img src="./assets/icon-square.png" alt="">
+            <div class="body-title">
+                <h3>Circulo</h3>
+                <p>Aquí podras calcular el área o el perímetro de un circulo</p>
+            </div>
+        </div>
+        <form id="form">
+            <label for="InputCirculo">¿Cual es el radio de tu circulo?:</label>
+            <input id="InputCirculo" placeholder="Ingresar valor" type="number">
+            <div class="form-result">
+                <div class="result-perimetro">
+                    <p>Perímetro: <strong id="circuloPerimetro"></strong></p>
+                </div>
+                <div class="result-area">
+                    <p>Área: <strong id="circuloArea"></strong></p>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button id="perimetroCirculo" onclick="calcularPerimetroCirculo()" type="button">Calcular el perímetro</button>
+                <button id="areaCirculo" onclick="calcularAreaCirculo()" type="button">Calcular el área</button>
+            </div>    
+            <div class="erase">
+                <button onclick="resetInputCirculo()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
             </div>        
         </form>
     </section>
