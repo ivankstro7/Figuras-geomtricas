@@ -71,12 +71,12 @@
     <section class="container-menu">
         <p>Selecciona una opción</p>
         <div class="menu-options">
-            <button id="square" type="button"><img src="./assets/square.png" alt="">Cuadrado</button>
-            <button id="triangle" type="button"><img src="./assets/triangle.png" alt="">Triángulo</button>
+            <button id="square" onclick="showScuare()" type="button"><img id="icon-square" src="./assets/square.png" alt=""><img id="icon-blackSquare" src="./assets/black-square.png" alt="">Cuadrado</button>
+            <button id="triangle" onclick="showTriangle()" type="button"><img id="icon-triangle" src="./assets/triangle.png" alt=""><img id="icon-Whitetriangle" src="./assets/whiteTriangle.png" alt="">Triángulo</button>
             <button id="circle" type="button"><img src="./assets/circle.png" alt="">Circulo</button>
         </div>
     </section>
-    <section class="container-form">
+    <section id="form-square" class="container-form">
         <div class="form-title">
             <img src="./assets/icon-square.png" alt="">
             <div class="body-title">
@@ -104,7 +104,7 @@
             </div>        
         </form>
     </section>
-    <section class="container-form-triangle">
+    <section id="form-triangle" class="container-form">
         <div class="form-title">
             <img src="./assets/icon-triangle.png" alt="">
             <div class="body-title">
@@ -113,22 +113,40 @@
             </div>
         </div>
         <form id="form">
-            <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
-            <input id="InputCuadrado" placeholder="Ingresar valor" type="number">
+            <div class="container-side">   
+                <div class="sideA">
+                    <label for="InputSide">Cuánto mide el lado A del triángulo:</label>
+                    <input id="InputSideA" placeholder="Ingresar valor" type="number">
+                </div>
+                <div class="sideB">
+                    <label for="InputSide">Cuánto mide el lado B del triángulo:</label>
+                    <input id="InputSideB" placeholder="Ingresar valor" type="number">
+                </div>
+            </div>            
+            <div class="container-inputs">
+                <div class="base">
+                    <label for="InputBase">Cuánto mide la base de tu triángulo:</label>
+                    <input id="InputBase" placeholder="Ingresar valor" type="number">
+                </div>
+                <div class="height">
+                    <label for="InputHeight">Cuánto mide la altura de tu triángulo:</label>
+                    <input id="InputHeight" placeholder="Ingresar valor" type="number">
+                </div>
+            </div>            
             <div class="form-result">
                 <div class="result-perimetro">
-                    <p>Perímetro: <strong id="perimetro"></strong></p>
+                    <p>Perímetro: <strong id="perimetroTriangulo"></strong></p>
                 </div>
                 <div class="result-area">
-                    <p>Área: <strong id="area"></strong></p>
+                    <p>Área: <strong id="areaTriangulo"></strong></p>
                 </div>
             </div>
             <div class="form-buttons">
-                <button id="perimetro" onclick="calcularPerimetro()" type="button">Calcular el perímetro</button>
-                <button id="area" onclick="calcularArea()" type="button">Calcular el área</button>
+                <button id="perimetroTriangulo" onclick="calcularPerimetroTriangulo()" type="button">Calcular el perímetro</button>
+                <button id="perimetroArea" onclick="calcularAreaTriangulo()" type="button">Calcular el área</button>
             </div>    
             <div class="erase">
-                <button onclick="resetInput()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
+                <button onclick="resetInputTriangulo()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
             </div>        
         </form>
     </section>

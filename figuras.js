@@ -90,6 +90,64 @@ console.groupEnd();
 
 // interaccion con HTML
 
+// menu
+
+function showTriangle() {
+
+    const square = document.getElementById("form-square");
+    const triangle = document.getElementById("form-triangle");
+    const btnTriangle = document.getElementById("triangle");    
+    const btnSquare = document.getElementById("square");
+    const iconTriangle = document.getElementById("icon-triangle");
+    const iconBlackTriangle = document.getElementById("icon-Whitetriangle")
+    const iconSquare = document.getElementById("icon-square");
+    const iconBlackSquare = document.getElementById("icon-blackSquare");
+
+    square.style.display = "none";
+    triangle.style.display = "block";
+
+    iconTriangle.style.display = "none";
+    iconBlackTriangle.style.display = "block";
+    btnTriangle.style.background = "#41B883",
+    btnTriangle.style.color = "#fff",
+    btnTriangle.style.border = "none";
+
+    iconSquare.style.display = "none";
+    iconBlackSquare.style.display = "block";
+    btnSquare.style.background = "#fff";
+    btnSquare.style.color = "#423F3F";
+    btnSquare.style.border = "1px solid #D8DCE6";    
+}
+
+function showScuare() {
+
+    const square = document.getElementById("form-square");
+    const triangle = document.getElementById("form-triangle");
+    const btnTriangle = document.getElementById("triangle");    
+    const btnSquare = document.getElementById("square");
+    const iconTriangle = document.getElementById("icon-triangle");
+    const iconBlackTriangle = document.getElementById("icon-Whitetriangle")
+    const iconSquare = document.getElementById("icon-square");
+    const iconBlackSquare = document.getElementById("icon-blackSquare");
+
+    square.style.display = "block";
+    triangle.style.display = "none";
+
+    iconTriangle.style.display = "block";
+    iconBlackTriangle.style.display = "none";
+    btnTriangle.style.background = "#fff",
+    btnTriangle.style.color = "#423F3F",
+    btnTriangle.style.border = "1px solid #D8DCE6";
+
+    iconSquare.style.display = "block";
+    iconBlackSquare.style.display = "none";
+    btnSquare.style.background = "#41B883";
+    btnSquare.style.color = "#fff";
+    btnSquare.style.border = "none";    
+}
+
+// cuadrado
+
 function calcularPerimetro() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value
@@ -116,6 +174,47 @@ function resetInput() {
     document.getElementById("InputCuadrado").value="";
     const perimetro = document.getElementById("perimetro");
     const area = document.getElementById("area");
+
+    perimetro.style.color = "#fff";
+    area.style.color = "#fff";
+}
+
+// cuadrado
+
+// triangulo
+
+function calcularPerimetroTriangulo() {
+    const ladoA = document.getElementById("InputSideA").value; 
+    const ladoB = document.getElementById("InputSideB").value;
+    const base = document.getElementById("InputBase").value;
+    const resultado = ladoA + ladoB + base;
+    const perimetro = document.getElementById("perimetroTriangulo");
+
+    perimetro.style.color = "#423F3F"
+
+    document.getElementById("perimetroTriangulo").innerHTML = resultado;  
+}
+
+function calcularAreaTriangulo() {     
+    const base = document.getElementById("InputBase").value;
+    const altura = document.getElementById("InputHeight").value;
+    const resultado = (base * altura) / 2;
+    const area = document.getElementById("areaTriangulo");
+
+    area.style.color = "#423F3F"
+
+    document.getElementById("areaTriangulo").innerHTML = resultado;  
+}
+
+function resetInputTriangulo() {
+    document.getElementById("InputSideA").value="";
+    document.getElementById("InputSideB").value="";
+    document.getElementById("InputBase").value="";
+    document.getElementById("InputHeight").value="";
+    
+
+    const perimetro = document.getElementById("perimetroTriangulo");
+    const area = document.getElementById("areaTriangulo");
 
     perimetro.style.color = "#fff";
     area.style.color = "#fff";

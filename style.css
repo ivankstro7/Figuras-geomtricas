@@ -215,9 +215,17 @@ body{
     margin-right: 4px;
 }
 
+.container-menu .menu-options button #icon-blackSquare{
+    display: none;
+}
+
+.container-menu .menu-options button #icon-Whitetriangle{
+    display: none;
+}
+
 /* menu */
 
-/* formulario */
+/* formulario  cuadrado */
 
 .container-form{
     width: 50%;
@@ -331,4 +339,37 @@ body{
     cursor: pointer;
 }
 
-/* formulario */
+/* formulario cuadrado */
+
+/* formulario  triangulo */
+
+#form-triangle{
+    display: none;
+}
+
+#form-triangle .side{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-triangle .container-inputs, #form-triangle .container-side{
+    display: flex;
+}
+
+#form-triangle .container-side .sideA input, #form-triangle .container-side .sideB input{
+    width: 295px;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+#form-triangle .container-inputs .base input, #form-triangle .container-inputs .height input{
+    width: 295px;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+#form-triangle .container-inputs .height input{
+    margin-right: 0;
+}
+
+/* formulario  triangulo */
