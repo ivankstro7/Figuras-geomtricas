@@ -361,19 +361,57 @@ body{
 }
 
 #form-triangle .container-side .sideA input, #form-triangle .container-side .sideB input{
-    width: 295px;
+    width: 305px;
     margin-top: 8px;
     margin-right: 16px;
 }
 
 #form-triangle .container-inputs .base input, #form-triangle .container-inputs .height input{
-    width: 295px;
+    width: 303px;
     margin-top: 8px;
     margin-right: 16px;
 }
 
 #form-triangle .container-inputs .height input{
     margin-right: 0;
+}
+
+#form-triangle .form-resultTriangulo{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+#form-triangle .form-resultTriangulo .result-perimetro, #form-triangle .form-resultTriangulo .result-area,#form-triangle .form-resultTriangulo .result-altura{
+    width: 191px;
+    margin-right: 24px;
+}
+
+#form-triangle .form-resultTriangulo .result-altura{
+    margin-right: 0;
+}
+
+#form-triangle .form-resultTriangulo .result-perimetro p, #form-triangle .form-resultTriangulo .result-area p,#form-triangle .form-resultTriangulo .result-altura p{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: #423F3F;
+}
+
+#form-triangle #form .form-buttons button{
+    width: 197px;
+}
+
+#form-triangle #form .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form-triangle #form .resultIsoceles strong{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: #423F3F;
 }
 
 /* formulario  triangulo */

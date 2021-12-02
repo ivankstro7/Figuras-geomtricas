@@ -133,21 +133,30 @@
                     <input id="InputHeight" placeholder="Ingresar valor" type="number">
                 </div>
             </div>            
-            <div class="form-result">
+            <div class="form-resultTriangulo">
                 <div class="result-perimetro">
                     <p>Perímetro: <strong id="trianguloperimetro"></strong></p>
                 </div>
                 <div class="result-area">
                     <p>Área: <strong id="trianguloArea"></strong></p>
                 </div>
+                <div class="result-altura">
+                    <p>Altura Isoceles: <strong id="trianguloAltura"></strong></p>
+                </div>
             </div>
             <div class="form-buttons">
                 <button id="perimetroTriangulo" onclick="calcularPerimetroTriangulo()" type="button">Calcular el perímetro</button>
                 <button id="areaTriangulo" onclick="calcularAreaTriangulo()" type="button">Calcular el área</button>
-            </div>    
-            <div class="erase">
-                <button onclick="resetInputTriangulo()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
-            </div>        
+                <button id="alturaTriangulo" onclick="calcularAlturaTriangulo()" type="button">Calcular altura</button>
+            </div>
+            <div class="footer">
+                <div class="resultIsoceles">
+                    <strong id="isoceles"></strong>
+                </div>   
+                <div class="erase">
+                    <button onclick="resetInputTriangulo()" type="button"><img src="./assets/delete.png" alt=""> Borrar Resultado</button>
+                </div>
+            </div>                    
         </form>
     </section>
     <section id="form-circle" class="container-form">
