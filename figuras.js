@@ -277,16 +277,6 @@ function calcularAreaTriangulo() {
     document.getElementById("trianguloArea").innerHTML = resultado;  
 }
 
-// function calcularAlturaTriangulo(ladoA, ladoB, base) {
-//     const ladoA = parseFloat(document.getElementById("InputSideA").value);
-//     const ladoB = parseFloat(document.getElementById("InputSideB").value);
-//     const base = parseFloat(document.getElementById("InputBase").value);
-
-//     if (true) {
-        
-//     }
-// }
-
 function resetInputTriangulo() {
     document.getElementById("InputSideA").value="";
     document.getElementById("InputSideB").value="";

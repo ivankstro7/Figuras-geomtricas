@@ -382,8 +382,12 @@ body{
 }
 
 #form-triangle .form-resultTriangulo .result-perimetro, #form-triangle .form-resultTriangulo .result-area,#form-triangle .form-resultTriangulo .result-altura{
-    width: 191px;
+    width: 303px;
     margin-right: 24px;
+}
+
+#form-triangle .form-resultTriangulo .result-area{
+    margin-right: 0;
 }
 
 #form-triangle .form-resultTriangulo .result-altura{
@@ -391,23 +395,6 @@ body{
 }
 
 #form-triangle .form-resultTriangulo .result-perimetro p, #form-triangle .form-resultTriangulo .result-area p,#form-triangle .form-resultTriangulo .result-altura p{
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    font-weight: 500;
-    color: #423F3F;
-}
-
-#form-triangle #form .form-buttons button{
-    width: 197px;
-}
-
-#form-triangle #form .footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#form-triangle #form .resultIsoceles strong{
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: 500;
